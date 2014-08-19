@@ -1,0 +1,63 @@
+body{
+  letter-spacing: .2px;
+  font-weight: 200;
+}
+strong{
+  font-weight: 900;
+}
+p{
+  font-weight: 400;
+  font-family: $raleway;
+  max-width: 80%;
+  line-height: 1.4em;
+  h5 + &{
+    margin: .7em 0 0;
+  }
+}
+h2{
+  font-size: 1.9em;
+  line-height: 1.2em;
+  font-weight: 500;
+  p + &{
+    margin: 2em 0 0;
+  }
+}
+h4{
+  font-family: $raleway;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+h5.tag{
+  display: inline;
+  &:not(:last-child){
+    &:after{
+      content: " & ";
+    }
+  }
+}
+h5{
+  font-family: $raleway;
+  font-weight: 600;
+  letter-spacing: .1em;
+  font-size: .8em;
+  text-transform: uppercase;
+  h3 + &{
+    margin: .1em 0 0;
+  }
+}
+h3{
+  font-weight: 500;
+  font-size: 1.3em;
+  p + &{
+    margin: 1.2em 0 0;
+  }
+  h2 + &{
+    margin: 1.7em 0 0 ;
+  }
+}
+h6{
+  @extend .right;
+  @extend .column;
+  @extend .caption;
+  @extend .cf;
+}
