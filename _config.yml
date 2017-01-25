@@ -1,9 +1,0 @@
-# Site settings
-title: Jackson Lynch
-description: > 
-  Jackson Lynch is a product designer at Kickstarter.
-
-# Build settings
-markdown: redcarpet
-destination: _build
-permalink: /:title
