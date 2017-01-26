@@ -12471,36 +12471,17 @@ img {
   display: block;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .w100p {
   width: 100%;
 }
 
 .w100vp {
   width: 100vw;
-}
-
-.mt100 {
-  margin-top: 100px;
-}
-
-.mb100 {
-  margin-bottom: 100px;
-}
-
-.mt50 {
-  margin-top: 50px;
-}
-
-.mb50 {
-  margin-bottom: 50px;
-}
-
-.mb20 {
-  margin-bottom: 20px;
-}
-
-.mt20 {
-  margin-top: 20px;
 }
 
 .inline-block {
@@ -12513,6 +12494,215 @@ img {
 
 .o0p {
   opacity: 0;
+}
+
+.spacer-y-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.spacer-t-20 {
+  padding-top: 20px;
+}
+
+.spacer-b-20 {
+  padding-bottom: 20px;
+}
+
+.spacer-y-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 600px) {
+  .spacer-y-small {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.spacer-t-small {
+  padding-top: 10px;
+}
+@media (min-width: 600px) {
+  .spacer-t-small {
+    padding-top: 20px;
+  }
+}
+
+.spacer-b-small {
+  padding-bottom: 10px;
+}
+@media (min-width: 600px) {
+  .spacer-b-small {
+    padding-bottom: 20px;
+  }
+}
+
+.spacer-y-medium {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 900px) {
+  .spacer-y-medium {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-y-medium {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.spacer-t-medium {
+  padding-top: 30px;
+}
+@media (min-width: 900px) {
+  .spacer-t-medium {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-t-medium {
+    padding-top: 50px;
+  }
+}
+
+.spacer-b-medium {
+  padding-bottom: 30px;
+}
+@media (min-width: 900px) {
+  .spacer-b-medium {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-b-medium {
+    padding-bottom: 50px;
+  }
+}
+
+.spacer-y-large {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (min-width: 600px) {
+  .spacer-y-large {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-y-large {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-y-large {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.spacer-t-large {
+  padding-top: 70px;
+}
+@media (min-width: 600px) {
+  .spacer-t-large {
+    padding-top: 80px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-t-large {
+    padding-top: 90px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-t-large {
+    padding-top: 100px;
+  }
+}
+
+.spacer-b-large {
+  padding-bottom: 70px;
+}
+@media (min-width: 600px) {
+  .spacer-b-large {
+    padding-bottom: 80px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-b-large {
+    padding-bottom: 90px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-b-large {
+    padding-bottom: 100px;
+  }
+}
+
+.spacer-y-mega {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (min-width: 600px) {
+  .spacer-y-mega {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-y-mega {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-y-mega {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
+.spacer-t-mega {
+  padding-top: 120px;
+}
+@media (min-width: 600px) {
+  .spacer-t-mega {
+    padding-top: 140px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-t-mega {
+    padding-top: 160px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-t-mega {
+    padding-top: 200px;
+  }
+}
+
+.spacer-b-mega {
+  padding-bottom: 120px;
+}
+@media (min-width: 600px) {
+  .spacer-b-mega {
+    padding-bottom: 140px;
+  }
+}
+@media (min-width: 900px) {
+  .spacer-b-mega {
+    padding-bottom: 160px;
+  }
+}
+@media (min-width: 1250px) {
+  .spacer-b-mega {
+    padding-bottom: 200px;
+  }
 }
 
 .grey-900 {
@@ -12581,19 +12771,19 @@ img {
 }
 
 .type-large {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.8em;
 }
 @media (min-width: 900px) {
   .type-large {
-    font-size: 26px;
+    font-size: 22px;
     line-height: 1.8em;
   }
 }
 @media (min-width: 1250px) {
   .type-large {
-    font-size: 28px;
-    line-height: 1.6em;
+    font-size: 24px;
+    line-height: 1.8em;
   }
 }
 
@@ -12624,9 +12814,18 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: fixed;
 }
-.masthead .button {
-  padding-bottom: 30px;
+
+section.spacer {
+  height: 100vh;
+}
+
+section.project, section#about {
+  background-color: #EBEBEB;
+  z-index: 2;
+  position: relative;
+  border-top: 2px solid #272525;
 }
 
 .bttn__container {
@@ -12667,34 +12866,11 @@ img {
   background-color: #FFA487;
 }
 
-.vertical-align-push {
-  padding-top: 7px;
-}
-
-.dash {
-  width: 15px;
-  height: 2px;
-  background-color: #272525;
-  margin: 10px 0px;
-}
-
 .bio-img {
   padding-bottom: 15px;
   padding-top: 12px;
 }
 
-section:not(.masthead) {
-  padding-top: 200px;
-}
-
-.description-block {
-  margin-bottom: 30px;
-}
-@media (min-width: 900px) {
-  .description-block {
-    margin-bottom: 45px;
-  }
-}
 .description-block__label {
   padding-top: 10px;
 }
@@ -12753,10 +12929,6 @@ section:not(.masthead) {
   z-index: 2;
 }
 
-.project__content {
-  margin-top: 80px;
-}
-
 .pull-up {
   margin-top: -5vw;
   position: relative;
@@ -12790,7 +12962,7 @@ section:not(.masthead) {
   overflow: hidden;
 }
 .artboard__inner {
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
 video {
@@ -12824,6 +12996,37 @@ video {
 .justify-between {
   display: flex;
   justify-content: space-between;
+}
+
+.link {
+  border-bottom: 2px solid #ffffff;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+.link:hover {
+  border-color: #FFA487;
+}
+
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.header__links {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.header__link__item {
+  flex: 1;
+}
+.header__link__item:not(:last-of-type) {
+  margin-right: 10px;
+}
+@media (min-width: 600px) {
+  .header__link__item:not(:last-of-type) {
+    margin-right: 20px;
+  }
 }
 
 @-webkit-keyframes bttn-flip {
