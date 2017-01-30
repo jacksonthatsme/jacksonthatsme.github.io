@@ -12748,7 +12748,7 @@ a {
 }
 
 .type-mega {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.6em;
 }
 @media (min-width: 600px) {
@@ -12771,7 +12771,7 @@ a {
 }
 
 .type-large {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.8em;
 }
 @media (min-width: 900px) {
@@ -12844,6 +12844,14 @@ section.project, section#about {
   transition: transform 1s;
   -webkit-animation: bttn-flip 3200ms infinite linear;
   animation: bttn-flip 3200ms infinite linear;
+}
+@media (max-width: 599px) {
+  .bttn {
+    animation-timing-function: steps(2);
+    animation-duration: 2000ms;
+    -webkit-animation-duration: 2000ms;
+    -webkit-animation-timing-function: steps(2);
+  }
 }
 .bttn figure {
   margin: 0;
@@ -13009,6 +13017,11 @@ video {
 
 video::-webkit-media-controls {
   display: none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
 
 .header__links {
