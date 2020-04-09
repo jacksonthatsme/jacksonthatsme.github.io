@@ -12,13 +12,13 @@ gulp.task('sass', function() {
 });
 
 gulp.task('js:vendor', function(){
-  return gulp.src(['./assets/javascripts/vendor/*.js'])
+  return gulp.src(['./assets/scripts/vendor/*.js'])
   .pipe(concat('vendor.js'))
   .pipe(gulp.dest('./assets/js/'));
 });
 
 gulp.task('js:custom', function() {
-  return gulp.src('./assets/javascripts/*.js')
+  return gulp.src('./assets/scripts/*.js')
     .pipe(concat('site.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./assets/js/'));
@@ -32,5 +32,5 @@ gulp.task('default', ['build']);
 
 gulp.task('watch', function(){
   gulp.watch('./assets/scss/**/*.scss', ['build']);
-  gulp.watch('./assets/javascripts/*.js', ['build']);
+  gulp.watch('./assets/scripts/*.js', ['build']);
 });

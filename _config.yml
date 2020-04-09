@@ -37,4 +37,4 @@ exclude:
   - node_modules
   - package.json
   - "/assets/scss"
-- "/assets/javascripts"
+  - "/assets/javascripts"
