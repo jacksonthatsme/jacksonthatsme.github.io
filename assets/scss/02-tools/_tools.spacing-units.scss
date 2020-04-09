@@ -1,0 +1,19 @@
+// ------------------------------------------------------------------
+// TOOLS: Fluid Property
+// ------------------------------------------------------------------
+
+@function spacing-units($units, $min-screen: $min-width, $max-screen: $max-width) {
+  $min-value: $min-spacing-unit * $units;
+  $max-value: $max-spacing-unit * $units;
+  $a: ($max-value - $min-value) / ($max-screen - $min-screen);
+	$b: $min-value - $a * $min-screen;
+
+
+	$sign: "+";
+	@if ($b < 0) {
+		$sign: "-";
+		$b: abs($b);
+	}
+	@return calc(#{$a*100}vw #{$sign} #{$b});
+
+}

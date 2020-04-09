@@ -1,0 +1,21 @@
+// ------------------------------------------------------------------
+// GENERIC: Fonts
+// ------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Mabry';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/mabry-regular.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/mabry-regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Mabry';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/mabry-bold.woff2') format('woff2'),
+       url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/mabry-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}

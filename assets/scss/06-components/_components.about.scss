@@ -1,0 +1,78 @@
+// ------------------------------------------------------------------
+// COMPONENTS: About
+// ------------------------------------------------------------------
+
+.about {
+  border-top-width: 2px;
+  border-style: solid;
+  border-color: $black;
+
+  &__title {
+    @extend .type-size__L;
+    @extend .font--bold;
+    grid-column: 1 / -1;
+    margin-top: fluid-property(20px, 60px);
+
+    @media screen and (min-width: $BP--M) {
+      grid-column: 1 / 7;
+      grid-row: auto;
+    }
+  }
+
+  &__image {
+    grid-column: 1 / -1;
+    margin-top: fluid-property(20px, 60px);
+
+    &__attr {
+      @extend .type-size__S;
+      margin-top: spacing-units(1);
+    }
+
+    @media screen and (min-width: $BP--M) {
+      grid-column: 7 / -1;
+      grid-row: auto / span 3;
+    }
+  }
+
+  &__body {
+    grid-column: 1 / -1;
+
+    @media screen and (min-width: $BP--M) {
+      grid-column: 1 / 7;
+      grid-row: auto;
+    }
+
+    &__title {
+      @extend .type-size__L;
+      @extend .font--bold;
+      margin-top: spacing-units(6);
+    }
+
+    &__text {
+      @extend .type-size__M;
+      margin-top: spacing-units(2);
+    }
+    &__key {
+      @extend .type-size__M;
+      @extend .font--bold;
+      margin-top: spacing-units(2);
+    }
+    &__value {
+      @extend .type-size__M;
+    }
+
+    &__list {
+      @extend .type-size__M;
+      margin-top: spacing-units(2);
+
+      @media screen and (min-width: $BP--S) and (max-width: $BP--M) {
+        column-count: 2;
+        column-gap: fluid-property(15px, 30px);
+      }
+
+      @media screen and (min-width: $BP--L) {
+        column-count: 2;
+      }
+    }
+  }
+}

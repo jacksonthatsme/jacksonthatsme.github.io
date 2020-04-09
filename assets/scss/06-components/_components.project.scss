@@ -1,0 +1,110 @@
+// ------------------------------------------------------------------
+// COMPONENTS: Project
+// ------------------------------------------------------------------
+
+.project {
+
+  &__header {
+    display: flex;
+    padding-top: spacing-units(4);
+    padding-bottom: spacing-units(4);
+    cursor: pointer;
+    @extend .margin-container;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: $black;
+  }
+
+  &__title {
+    flex: 1;
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    @extend .type-size__L;
+    @extend .font--bold;
+    margin-right: spacing-units(1);
+  }
+
+  &__timeline {
+    @extend .type-size__L;
+  }
+
+  &__action {
+    height: spacing-units(4);
+    width: spacing-units(4);
+  }
+
+  &__body-wrapper {
+    overflow: hidden;
+  }
+
+  &__body {
+    padding-bottom: spacing-units(6);
+    & > div:first-child {
+      margin-top: 0px;
+    }
+  }
+
+  &__text {
+    @extend .type-size__M;
+    @extend .margin-container;
+    margin-top: spacing-units(2);
+  }
+
+  &__inline-label {
+    @extend .font--bold;
+    display: inline;
+    padding-right: spacing-units(1);
+  }
+
+  &__media {
+    margin-top: spacing-units(6);
+    padding-top: fluid-property(1px, 60px);
+    padding-left: fluid-property($min-margin, 100px);
+    padding-right: fluid-property($min-margin, 100px);
+    padding-bottom: fluid-property(1px, 60px);
+
+    @extend .margin-container;
+
+    @media screen and (max-width: $BP--S) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    & > * {
+      box-shadow: 0px 0px fluid-property(20px, 40px) rgba(0, 0, 0, 0.3);
+      margin-top: spacing-units(4);
+      margin-bottom: spacing-units(4);
+    }
+
+    &--inline {
+      display: flex;
+      justify-content: center;
+
+      & > * {
+        max-width: spacing-units(30);
+
+        &:not(:last-child) {
+          margin-right: fluid-property(10px, 40px)
+        }
+      }
+
+      &.mobile--stacked {
+        @media screen and (max-width: $BP--S) {
+          flex-direction: column;
+          align-items: center;
+
+          & > * {
+            margin-right: 0;
+
+            &:not(:last-child) {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

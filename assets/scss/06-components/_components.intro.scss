@@ -1,0 +1,59 @@
+// ------------------------------------------------------------------
+// COMPONENTS: Intro
+// ------------------------------------------------------------------
+
+.intro {
+  -webkit-clip-path: inset(0);
+  clip-path: inset(0);
+  clip: rect(0px, auto, auto, 0px);
+}
+
+.flag {
+  &__wrapper {
+    width: 100vw;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: fluid-property(30px, 0px);
+    @media screen and (min-width: $BP--M) {
+      margin-bottom: fluid-property(-220px, -265px, $BP--M);
+      height: 200vh;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    width: fluid-property(300px, 750px);
+    transform: rotate(-18deg) translateX(-10%);;
+    border-left: 2px solid $black;
+    transform-origin: right top;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}
+
+.site-menu {
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  @extend .margin-container;
+  padding-bottom: spacing-units(6);
+  @extend .type-size__M;
+  display: none;
+
+  @media screen and (min-width: $BP--M) {
+    display: block;
+  }
+
+  &__title {
+    @extend .font--bold;
+  }
+  &__list__item {
+    cursor: pointer;
+  }
+}

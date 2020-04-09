@@ -1,0 +1,32 @@
+// ------------------------------------------------------------------
+// COMPONENTS: Header
+// ------------------------------------------------------------------
+
+.site__header {
+  @extend .type-size__M;
+  @extend .font--bold;
+  padding-top: spacing-units(3);
+  @media screen and (min-width: $BP--M) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header__menu {
+  @extend .font--regular;
+  display: flex;
+
+  &__item {
+    cursor: pointer;
+    &:not(:last-child) {
+      margin-right: spacing-units(4);
+    }
+
+    &.show-on-mobile {
+      display: block;
+      @media screen and (min-width: $BP--M) {
+        display: none;
+      }
+    }
+  }
+}

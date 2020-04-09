@@ -1,0 +1,18 @@
+// ------------------------------------------------------------------
+// UTILITIES: Backgrounds
+// ------------------------------------------------------------------
+
+.bg {
+  &--grey500 {
+    background-color: $grey500;
+  }
+  &--yellow {
+    background-color: $yellow;
+  }
+  &--turquise {
+    background-color: $turquise;
+  }
+  &--orange {
+    background-color: $orange;
+  }
+}

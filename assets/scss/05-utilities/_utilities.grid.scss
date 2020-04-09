@@ -1,0 +1,9 @@
+// ------------------------------------------------------------------
+// UTILITIES: Grid
+// ------------------------------------------------------------------
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: fluid-property($min-gutter, $max-gutter);
+}

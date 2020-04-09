@@ -1,0 +1,12 @@
+// ------------------------------------------------------------------
+// BASE: Document
+// ------------------------------------------------------------------
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  box-sizing: inherit;
+  font-family: $font-stack--sans;
+}

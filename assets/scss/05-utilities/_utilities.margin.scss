@@ -1,0 +1,13 @@
+// ------------------------------------------------------------------
+// UTILITIES: Margin
+// ------------------------------------------------------------------
+
+.margin-container {
+  margin-left: fluid-property($min-margin, $max-margin);
+  margin-right: fluid-property($min-margin, $max-margin);
+  @media(min-width: $max-width) {
+    margin-left: auto;
+    margin-right: auto;
+    width: $max-width - ($max-margin * 2);
+  }
+}
