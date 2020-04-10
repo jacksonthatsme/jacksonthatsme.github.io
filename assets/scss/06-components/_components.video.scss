@@ -4,10 +4,12 @@
 
 video {
   width: 100% !important;
+  line-height: 0;
 }
 
 .video-object {
   position: relative;
+  line-height: 0;
 
   &__overlay {
     position: absolute;

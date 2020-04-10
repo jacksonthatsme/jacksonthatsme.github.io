@@ -53,7 +53,8 @@
   &__title {
     @extend .font--bold;
   }
-  &__list__item {
+  &__list__item__link {
+    display: inline-block;
     cursor: pointer;
   }
 }

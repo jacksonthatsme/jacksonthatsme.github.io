@@ -33,11 +33,11 @@ $(document).ready(function(){
   function toggleAccordionItem(container, content, action) {
     if (container.hasClass('is-closed')) {
         gsap.to(content, {opacity: 1, height: 'auto', duration: 1});
-        gsap.to(action, {rotation: 180, duration: .3});
+        gsap.to(action, {rotation: 0, duration: .3});
         container.toggleClass('is-closed is-open');
     } else {
         gsap.to(content, { height: 0, opacity: 0, duration: .6});
-        gsap.to(action, {rotation: 0, duration: .2});
+        gsap.to(action, {rotation: 180, duration: .2});
         container.toggleClass('is-closed is-open');
     }
   }

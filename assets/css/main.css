@@ -280,7 +280,8 @@ a {
   @media screen and (min-width: 740px) {
     .site-menu {
       display: block; } }
-  .site-menu__list__item {
+  .site-menu__list__item__link {
+    display: inline-block;
     cursor: pointer; }
 
 .project__header {
@@ -350,10 +351,12 @@ a {
             margin-bottom: 0; } }
 
 video {
-  width: 100% !important; }
+  width: 100% !important;
+  line-height: 0; }
 
 .video-object {
-  position: relative; }
+  position: relative;
+  line-height: 0; }
   .video-object__overlay {
     position: absolute;
     top: 0px;
