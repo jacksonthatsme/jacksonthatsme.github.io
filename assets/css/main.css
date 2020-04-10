@@ -380,7 +380,8 @@ video::-webkit-media-controls-start-playback-button {
   height: 90px;
   position: relative;
   perspective: 800px;
-  cursor: pointer; }
+  cursor: pointer;
+  display: none; }
 
 .video__action-button {
   width: 100%;

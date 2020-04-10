@@ -31,18 +31,8 @@
         In 2017, in the midst of an exciting rebrand, we saw a prime opportunity to reframe our homepage as an outlet to educate new users about the platform and build rapport with the creative community. Our hypothesis was that a more opinionated, editorialized presentation of the material would elevate our content and reinforce our reputation as a home for creators. We tested these assumptions in a week-long Google Ventures style design sprint.
       .project__media.bg--orange
         .video-object{data: {'js': 'video-object'}}
-          %video{preload: true, poster: "https://dl.dropboxusercontent.com/s/k8pxyhwq2fbsjok/ImpactPageVideoPoster.jpg", muted: true, playsinline: true}
-            %source{type: "video/mp4", src: "https://dl.dropboxusercontent.com/s/ebtcj1x712hkt4r/ImpactPage--FullScroll.mov"}
-          .video-object__overlay{data: {'js': 'video-overlay'}}
-            .video__action-container{data: {'js': 'play-video'}}
-              .video__action-button
-                %figure.front{data: {'js': 'button-front'}}
-                  Play
-                %figure.back{data: {'js': 'button-back'}}
-                  Video
-        .video-object{data: {'js': 'video-object'}}
-          %video{autoplay: false, poster: "https://dl.dropboxusercontent.com/s/k8pxyhwq2fbsjok/ImpactPageVideoPoster.jpg", muted: true, playsinline: true}
-            %source{type: "video/mp4", src: "https://dl.dropboxusercontent.com/s/ebtcj1x712hkt4r/ImpactPage--FullScroll.mov"}
+          %video{preload: true, autoplay: true, muted: true, playsinline: true, loop: true}
+            %source{type: "video/mp4", src: "https://dl.dropboxusercontent.com/s/g3zloj60mzdry88/Kickstarter-Impact-Page.mp4"}
           .video-object__overlay{data: {'js': 'video-overlay'}}
             .video__action-container{data: {'js': 'play-video'}}
               .video__action-button
@@ -59,13 +49,18 @@
           %img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/impact-7.png" alt="")/
         .project__media__image
           %img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/impact-8.png" alt="")/
-      .project__media.project__media--inline.mobile--stacked.bg--orange
-        .project__media__image
-          %img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/impact-6.png" alt="")/
-        .project__media__image
-          %img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/impact-7.png" alt="")/
-      .project__media.project__media--inline.mobile--stacked.bg--orange
-        .project__media__image
-          %img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61092/impact-6.png" alt="")/
       .project__text
         Taking on the front-end development responsibilities myself allowed for a strong synthesis between the design and development phases, resulting in a comprehensively integrated experience. Interactions and animations were designed and then quickly prototyped to test for feasibility and performance. The continuity between the mobile and desktop experiences were carefully addressed.
+      .project__media.bg--yellow
+        .video-object{data: {'js': 'video-object'}}
+          %video{preload: true, autoplay: true, muted: true, playsinline: true, loop: true}
+            %source{type: "video/mp4", src: "https://dl.dropboxusercontent.com/s/6p10sue0x4o1lc9/KickstarterBenefitStatement.mp4"}
+          .video-object__overlay{data: {'js': 'video-overlay'}}
+            .video__action-container{data: {'js': 'play-video'}}
+              .video__action-button
+                %figure.front{data: {'js': 'button-front'}}
+                  Play
+                %figure.back{data: {'js': 'button-back'}}
+                  Video
+      .project__text
+        In 2016, after officially reincorporating as a Public Benefit Company (PBC), I was asked to put together a page that would document our company’s progress in meeting the goals of our new charter. Half branding exercize and half comprehensive legal document, this page would highlight some of our most exciting initiatives from the past year, bolster them with hard statistics and paint us as a philanthropic.

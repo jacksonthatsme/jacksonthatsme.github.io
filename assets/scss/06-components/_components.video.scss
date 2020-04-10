@@ -41,6 +41,7 @@ video::-webkit-media-controls-start-playback-button {
   position: relative;
   perspective: 800px;
   cursor: pointer;
+  display: none;
 }
 
 .video__action-button {
