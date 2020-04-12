@@ -337,7 +337,7 @@ a {
     .project__media {
       margin-left: 0px;
       margin-right: 0px; } }
-  .project__media__image, .project__media__video {
+  .project__media__image {
     box-shadow: 0px 0px calc(1.95122vw + 12.68293px) rgba(0, 0, 0, 0.3); }
   .project__media > * {
     margin-top: calc(1.17073vw + 23.60976px);
@@ -364,7 +364,8 @@ video {
 
 .project__video {
   position: relative;
-  line-height: 0; }
+  line-height: 0;
+  box-shadow: 0px 0px calc(1.95122vw + 12.68293px) rgba(0, 0, 0, 0.3); }
 
 video::-webkit-media-controls {
   display: none !important; }
