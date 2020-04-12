@@ -18,6 +18,10 @@
 
   &__item {
     cursor: pointer;
+
+    &:hover {
+      color: $orange;
+    }
     &:not(:last-child) {
       margin-right: spacing-units(4);
     }

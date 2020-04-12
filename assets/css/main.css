@@ -137,6 +137,9 @@ a {
 .bg--orange {
   background-color: #FF7F58; }
 
+.bg--burgandy {
+  background-color: #960335; }
+
 .about {
   border-top-width: 2px;
   border-style: solid;
@@ -233,6 +236,8 @@ a {
   display: flex; }
   .header__menu__item {
     cursor: pointer; }
+    .header__menu__item:hover {
+      color: #FF7F58; }
     .header__menu__item:not(:last-child) {
       margin-right: calc(1.17073vw + 23.60976px); }
     .header__menu__item.show-on-mobile {
@@ -283,6 +288,8 @@ a {
   .site-menu__list__item__link {
     display: inline-block;
     cursor: pointer; }
+    .site-menu__list__item__link:hover {
+      color: #FF7F58; }
 
 .project__header {
   display: flex;
