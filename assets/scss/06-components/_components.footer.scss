@@ -1,0 +1,75 @@
+// ------------------------------------------------------------------
+// COMPONENTS: Footer
+// ------------------------------------------------------------------
+
+.footer {
+  margin-top: spacing-units(6);
+  background-color: $yellow;
+
+  &__body {
+    grid-column: 1 / -1;
+    margin-top: spacing-units(6);
+
+    @media screen and (min-width: $BP--S) {
+      grid-column: 1 / 10;
+    }
+    @media screen and (min-width: $BP--L) {
+      grid-column: 1 / 9;
+    }
+
+    & > div:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    @extend .type-size__L;
+    @extend .font--bold;
+    margin-top: spacing-units(6);
+  }
+
+  &__text {
+    @extend .type-size__M;
+    margin-top: spacing-units(2);
+  }
+
+  &__list {
+    @extend .type-size__M;
+
+    &__item {
+      display: inline-block;
+      margin-right: spacing-units(3);
+      margin-top: spacing-units(2);
+
+      &:not(:last-child) {
+        @media screen and (min-width: $BP--M) {
+          margin-right: spacing-units(6);
+        }
+      }
+    }
+  }
+
+  &__graphic {
+    grid-column: 5 / 9;
+    margin-top: spacing-units(6);
+
+    @media screen and (min-width: $BP--S) {
+      grid-column: 10 / -1;
+    }
+
+    @media screen and (min-width: $BP--M) {
+      grid-column: 11 / -1;
+    }
+  }
+
+  &__copyright {
+    @extend .type-size__S;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: spacing-units(2);
+    margin-top: spacing-units(12);
+    @media screen and (min-width: $BP--S) {
+      text-align: left;
+    }
+  }
+}

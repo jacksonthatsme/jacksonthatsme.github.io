@@ -1,0 +1,28 @@
+// ------------------------------------------------------------------
+// UTILITIES: Type Scale
+// ------------------------------------------------------------------
+
+.type-size__XL {
+  font-size: fluid-property(40px, 52px);
+  line-height: fluid-property(34px, 62px);
+}
+
+.type-size__L {
+  font-size: fluid-property(24px, 32px);
+  line-height: fluid-property(30px, 38px);
+}
+
+.type-size__M {
+  font-size: fluid-property(18px, 22px);
+  line-height: fluid-property(24px, 34px);
+
+  @media screen and (min-width: $max-width) {
+    font-size: 22px;
+    line-height: 34px;
+  }
+}
+
+.type-size__S {
+  font-size: fluid-property(12px, 14px);
+  line-height: fluid-property(20px, 24px);
+}

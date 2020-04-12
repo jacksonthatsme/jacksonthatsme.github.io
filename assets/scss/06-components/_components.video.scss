@@ -1,0 +1,22 @@
+// ------------------------------------------------------------------
+// COMPONENTS: Video
+// ------------------------------------------------------------------
+
+video {
+  width: 100% !important;
+  line-height: 0;
+}
+
+.project__video {
+  position: relative;
+  line-height: 0;
+}
+
+video::-webkit-media-controls {
+  display:none !important;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
