@@ -73,3 +73,5 @@ $(document).ready(function(){
   });
 
 });
+
+document.addEventListener("DOMContentLoaded", yall);
