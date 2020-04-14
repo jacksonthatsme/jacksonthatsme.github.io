@@ -71,17 +71,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
-@-webkit-keyframes bttn-flip {
+@keyframes spin {
   from {
-    -webkit-transform: rotateY(0deg); }
+    transform: rotate(0deg); }
   to {
-    -webkit-transform: rotateY(360deg); } }
-
-@keyframes bttn-flip {
-  from {
-    transform: rotateY(0deg); }
-  to {
-    transform: rotateY(360deg); } }
+    transform: rotate(360deg); } }
 
 .font--regular, .header__menu {
   font-weight: 500;
@@ -365,10 +359,42 @@ video {
   width: 100% !important;
   line-height: 0; }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 .project__video {
   position: relative;
   line-height: 0;
   box-shadow: 0px 0px calc(1.95122vw + 12.68293px) rgba(0, 0, 0, 0.3); }
+  .project__video:before, .project__video:after {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(1.7561vw + 35.41463px);
+    width: calc(1.7561vw + 35.41463px);
+    display: block;
+    position: absolute;
+    content: "";
+    transition-duration: 200ms; }
+  .project__video:before {
+    background-color: #ffffff; }
+  .project__video:after {
+    background-image: url("../images/Loader.svg");
+    background-size: cover;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(16, end); }
+  .project__video.is-loaded:before, .project__video.is-loaded:after {
+    opacity: 0; }
 
 video::-webkit-media-controls {
   display: none !important; }

@@ -2,12 +2,11 @@
 // UTILITIES: Animations
 // ------------------------------------------------------------------
 
-@-webkit-keyframes bttn-flip {
-  from {-webkit-transform: rotateY(0deg);}
-  to {-webkit-transform: rotateY(360deg);}
-}
-
-@keyframes bttn-flip {
-  from {transform: rotateY(0deg);}
-  to {transform: rotateY(360deg);}
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
 }

@@ -25,7 +25,14 @@ $(document).ready(function(){
     }
   }
   var video = $('video');
-  console.log(video);
+
+  video.each(function(){
+    $(this).on('play', function() {
+      var thisVideoParent = this.closest('[data-js="video-object"]');
+      $(thisVideoParent).addClass('is-loaded');
+    });
+  })
+
   accordionTrigger.click(function() {
     var $content = $(this).next('[data-js="accordion__content"]'),
         $container = $(this).parent('[data-js="accordion__item"]'),

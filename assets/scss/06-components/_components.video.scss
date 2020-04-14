@@ -6,11 +6,56 @@ video {
   width: 100% !important;
   line-height: 0;
 }
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
 
 .project__video {
   position: relative;
   line-height: 0;
   box-shadow: 0px 0px fluid-property(20px, 40px) rgba(0, 0, 0, 0.3);
+
+  &:before, &:after {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: spacing-units(6);
+    width:spacing-units(6);
+    display: block;
+    position: absolute;
+    content: "";
+    transition-duration: 200ms;
+  }
+
+  &:before {
+    background-color: #ffffff;
+  }
+
+  &:after {
+    background-image: url("../images/Loader.svg");
+    background-size: cover;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(16, end);
+  }
+
+  &.is-loaded {
+    &:before, &:after {
+      opacity: 0;
+    }
+  }
 }
 
 video::-webkit-media-controls {
