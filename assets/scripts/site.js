@@ -1,25 +1,8 @@
 $(document).ready(function(){
-  var playVideo = $('[data-js="play-video"]');
   var accordionItem = $('[data-js="accordion__item"]'),
       accordionTrigger = $('[data-js="accordion__trigger"]'),
       accordionContent = $('[data-js="accordion__content"]'),
       scrollToSection = $('[data-js="scroll-to-section"]');
-
-  playVideo.on('click', function() {
-    var parentMedia = this.closest('[data-js="video-object"]');
-    var videoEl = $(parentMedia).find('video')[0];
-    videoEl.load();
-    videoEl.play();
-    var mediaOverlay = $(parentMedia).find('[data-js="video-overlay"]');
-    var buttonFront = $(parentMedia).find('[data-js="button-front"]');
-    var buttonBack = $(parentMedia).find('[data-js="button-back"]');
-    mediaOverlay.addClass('hide');
-    videoEl.addEventListener('ended', function() {
-      buttonFront.text('Re');
-      buttonBack.text('Play');
-      mediaOverlay.removeClass('hide');
-    }, false);
-  });
 
   accordionItem.each(function() {
     if ($(this).hasClass('is-closed')) {
