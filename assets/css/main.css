@@ -96,11 +96,11 @@ a {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: calc(1.46341vw + 9.5122px); }
 
-.margin-container, .site-menu, .project__header, .project__text, .project__media {
+.margin-container, .site-menu, .project__header, .project__text, .project__logo, .project__media {
   margin-left: calc(3.90244vw + 5.36585px);
   margin-right: calc(3.90244vw + 5.36585px); }
   @media (min-width: 1400px) {
-    .margin-container, .site-menu, .project__header, .project__text, .project__media {
+    .margin-container, .site-menu, .project__header, .project__text, .project__logo, .project__media {
       margin-left: auto;
       margin-right: auto;
       width: 1280px; } }
@@ -326,6 +326,9 @@ a {
 .project__inline-label {
   display: inline;
   padding-right: calc(0.29268vw + 5.90244px); }
+
+.project__logo {
+  margin-top: calc(1.7561vw + 35.41463px); }
 
 .project__media {
   margin-top: calc(1.7561vw + 35.41463px);
