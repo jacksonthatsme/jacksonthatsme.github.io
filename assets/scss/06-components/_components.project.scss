@@ -59,11 +59,6 @@
     padding-right: spacing-units(1);
   }
 
-  &__logo {
-    @extend .margin-container;
-    margin-top: spacing-units(6);
-  }
-
   &__media {
     margin-top: spacing-units(6);
     padding-top: fluid-property(1px, 60px);
