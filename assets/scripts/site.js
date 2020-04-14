@@ -41,12 +41,18 @@ $(document).ready(function(){
         container.toggleClass('is-closed is-open');
     }
   }
-
-    accordionTrigger.click(function() {
+  var video = $('video');
+  console.log(video);
+  accordionTrigger.click(function() {
     var $content = $(this).next('[data-js="accordion__content"]'),
         $container = $(this).parent('[data-js="accordion__item"]'),
         $action = $(this).find('[data-js="accordion__action"]');
     toggleAccordionItem($container, $content, $action);
+    var thisSectionVideos = $container.find(video);
+    thisSectionVideos.each(function() {
+      this.load();
+      this.play();
+    });
   });
 
   scrollToSection.on("click touchend", function(e){
