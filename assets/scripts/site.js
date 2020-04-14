@@ -27,11 +27,19 @@ $(document).ready(function(){
   var video = $('video');
 
   video.each(function(){
-    $(this).on('play', function() {
+    $(this).on('loadstart', function (event) {
       var thisVideoParent = this.closest('[data-js="video-object"]');
-      $(thisVideoParent).addClass('is-loaded');
+      $(thisVideoParent).addClass('is-loading');
     });
-  })
+    $(this).on('canplay', function (event) {
+      var thisVideoParent = this.closest('[data-js="video-object"]');
+      $(thisVideoParent).removeClass('is-loading');
+    });
+    // $(this).on('play', function() {
+    //   var thisVideoParent = this.closest('[data-js="video-object"]');
+    //   $(thisVideoParent).addClass('is-loaded');
+    // });
+  });
 
   accordionTrigger.click(function() {
     var $content = $(this).next('[data-js="accordion__content"]'),

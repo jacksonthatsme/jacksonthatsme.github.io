@@ -36,6 +36,7 @@ video {
     position: absolute;
     content: "";
     transition-duration: 200ms;
+    opacity: 0;
   }
 
   &:before {
@@ -51,9 +52,9 @@ video {
     animation-timing-function: steps(16, end);
   }
 
-  &.is-loaded {
+  &.is-loading {
     &:before, &:after {
-      opacity: 0;
+      opacity: 1;
     }
   }
 }

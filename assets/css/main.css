@@ -383,7 +383,8 @@ video {
     display: block;
     position: absolute;
     content: "";
-    transition-duration: 200ms; }
+    transition-duration: 200ms;
+    opacity: 0; }
   .project__video:before {
     background-color: #ffffff; }
   .project__video:after {
@@ -393,8 +394,8 @@ video {
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: steps(16, end); }
-  .project__video.is-loaded:before, .project__video.is-loaded:after {
-    opacity: 0; }
+  .project__video.is-loading:before, .project__video.is-loading:after {
+    opacity: 1; }
 
 video::-webkit-media-controls {
   display: none !important; }
