@@ -51,6 +51,14 @@
     @extend .type-size__M;
     @extend .margin-container;
     margin-top: spacing-units(2);
+
+    & a {
+      color: $orange;
+
+      &:hover {
+        color: $turquise;
+      }
+    }
   }
 
   &__inline-label {
