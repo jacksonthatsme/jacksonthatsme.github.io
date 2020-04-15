@@ -18,6 +18,11 @@ $(document).ready(function(){
         gsap.to(content, {opacity: 1, height: 'auto', duration: 1});
         gsap.to(action, {rotation: 0, duration: .3});
         container.toggleClass('is-closed is-open');
+        var thisSectionVideos = container.find(video);
+        thisSectionVideos.each(function() {
+          this.load();
+          this.play();
+        });
     } else {
         gsap.to(content, { height: 0, opacity: 0, duration: .6});
         gsap.to(action, {rotation: 180, duration: .2});
@@ -35,10 +40,6 @@ $(document).ready(function(){
       var thisVideoParent = this.closest('[data-js="video-object"]');
       $(thisVideoParent).removeClass('is-loading');
     });
-    // $(this).on('play', function() {
-    //   var thisVideoParent = this.closest('[data-js="video-object"]');
-    //   $(thisVideoParent).addClass('is-loaded');
-    // });
   });
 
   accordionTrigger.click(function() {
@@ -46,11 +47,6 @@ $(document).ready(function(){
         $container = $(this).parent('[data-js="accordion__item"]'),
         $action = $(this).find('[data-js="accordion__action"]');
     toggleAccordionItem($container, $content, $action);
-    var thisSectionVideos = $container.find(video);
-    thisSectionVideos.each(function() {
-      this.load();
-      this.play();
-    });
   });
 
   scrollToSection.on("click touchend", function(e){
