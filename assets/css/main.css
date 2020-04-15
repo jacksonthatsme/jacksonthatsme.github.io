@@ -150,6 +150,10 @@ a {
     margin-top: calc(3.90244vw + 5.36585px); }
     .about__image__attr {
       margin-top: calc(0.29268vw + 5.90244px); }
+      .about__image__attr a {
+        color: #FF7F58; }
+        .about__image__attr a:hover {
+          color: #2BDAB0; }
     @media screen and (min-width: 740px) {
       .about__image {
         grid-column: 7 / -1;
@@ -164,6 +168,10 @@ a {
       margin-top: calc(1.7561vw + 35.41463px); }
     .about__body__text {
       margin-top: calc(0.58537vw + 11.80488px); }
+      .about__body__text a {
+        color: #FF7F58; }
+        .about__body__text a:hover {
+          color: #2BDAB0; }
     .about__body__key {
       margin-top: calc(0.58537vw + 11.80488px); }
     .about__body__list {

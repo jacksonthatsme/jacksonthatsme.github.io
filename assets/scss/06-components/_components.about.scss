@@ -26,6 +26,13 @@
     &__attr {
       @extend .type-size__S;
       margin-top: spacing-units(1);
+      & a {
+        color: $orange;
+
+        &:hover {
+          color: $turquise;
+        }
+      }
     }
 
     @media screen and (min-width: $BP--M) {
@@ -51,6 +58,14 @@
     &__text {
       @extend .type-size__M;
       margin-top: spacing-units(2);
+
+      & a {
+        color: $orange;
+
+        &:hover {
+          color: $turquise;
+        }
+      }
     }
     &__key {
       @extend .type-size__M;
