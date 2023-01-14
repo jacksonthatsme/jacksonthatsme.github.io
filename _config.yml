@@ -24,9 +24,8 @@ url: "jacksonthats.me" # the base hostname & protocol for your site, e.g. http:/
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - jekyll-haml
+# plugins:
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

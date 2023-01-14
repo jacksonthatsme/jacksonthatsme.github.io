@@ -1,0 +1,21 @@
+.resume-row {
+    padding-top: spacing-units(4);
+    padding-bottom: spacing-units(4);
+    @extend .margin-container;
+    border-top-width: 2px;
+    border-style: solid;
+    border-color: $black;
+    @extend .type-size__L;
+    &__block {
+      // display: flex;
+    }
+}
+
+.role {
+  @extend .font--bold;
+  padding-bottom: spacing-units(1);
+}
+.company, .timeframe {
+  display: inline-block;
+  margin-right: spacing-units(4);
+}
