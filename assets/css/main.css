@@ -419,9 +419,6 @@ video::-webkit-media-controls-start-playback-button {
   border-style: solid;
   border-color: #000000; }
 
-.role {
-  padding-bottom: calc(0.29268vw + 5.90244px); }
-
 .company, .timeframe {
   display: inline-block;
-  margin-right: calc(1.17073vw + 23.60976px); }
+  margin-right: calc(0.58537vw + 11.80488px); }

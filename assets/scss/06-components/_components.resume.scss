@@ -13,9 +13,8 @@
 
 .role {
   @extend .font--bold;
-  padding-bottom: spacing-units(1);
 }
 .company, .timeframe {
   display: inline-block;
-  margin-right: spacing-units(4);
+  margin-right: spacing-units(2);
 }
