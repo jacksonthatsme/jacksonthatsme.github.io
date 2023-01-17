@@ -1,36 +1,33 @@
-// Define variables
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
+const { src, dest, parallel, series, watch } = require('gulp');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
 
 // Register Tasks
-gulp.task('sass', function() {
-  return gulp.src('./assets/scss/*.scss')
+function sassTask() {
+  return src('./assets/scss/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./assets/css/'));
-});
+    .pipe(dest('./assets/css/'));
+}
 
-gulp.task('js:vendor', function(){
-  return gulp.src(['./assets/scripts/vendor/*.js'])
-  .pipe(concat('vendor.js'))
-  .pipe(gulp.dest('./assets/js/'));
-});
+function jsVendorTask() {
+  return src(['./assets/scripts/vendor/*.js'])
+    .pipe(concat('vendor.js'))
+    .pipe(dest('./assets/js/'));
+}
 
-gulp.task('js:custom', function() {
-  return gulp.src('./assets/scripts/*.js')
+function jsCustomTask() {
+  return src('./assets/scripts/*.js')
     .pipe(concat('site.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./assets/js/'));
-});
+    .pipe(dest('./assets/js/'));
+}
 
-gulp.task('js', ['js:vendor', 'js:custom']);
+const jsTask = parallel(jsVendorTask, jsCustomTask);
+const buildTask = parallel(sassTask, jsTask);
 
-gulp.task('build', ['sass','js']);
-
-gulp.task('default', ['build']);
-
-gulp.task('watch', function(){
-  gulp.watch('./assets/scss/**/*.scss', ['build']);
-  gulp.watch('./assets/scripts/*.js', ['build']);
-});
+exports.default = buildTask;
+exports.watch = function() {
+  watch('./assets/scss/**/*.scss', buildTask);
+  watch('./assets/scripts/*.js', buildTask);
+};

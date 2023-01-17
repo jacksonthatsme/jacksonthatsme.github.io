@@ -12,11 +12,11 @@
   &__wrapper {
     width: 100vw;
     position: relative;
-    height: 100vh;
+    height: 150vh;
     overflow: hidden;
     margin-top: fluid-property(30px, 0px);
+    margin-bottom: fluid-property(-220px, -265px, $BP--M);
     @media screen and (min-width: $BP--M) {
-      margin-bottom: fluid-property(-220px, -265px, $BP--M);
       height: 200vh;
     }
   }
@@ -38,20 +38,14 @@
 }
 
 .site-menu {
-  position: sticky;
-  position: -webkit-sticky;
   bottom: 0;
   @extend .margin-container;
-  padding-bottom: spacing-units(6);
-  @extend .type-size__M;
-  display: none;
-
-  @media screen and (min-width: $BP--M) {
-    display: block;
-  }
+  padding-bottom: spacing-units(4);
+  @extend .font--bold;
 
   &__title {
     @extend .font--bold;
+    @extend .type-size__L;
   }
   &__list__item__link {
     display: inline-block;

@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
@@ -22,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/jacksonthatsme/jacksonthatsme.github.io/issues"
   },
-  "homepage": "https://github.com/jacksonthatsme/jacksonthatsme.github.io#readme"
+  "homepage": "https://github.com/jacksonthatsme/jacksonthatsme.github.io#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
